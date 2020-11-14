@@ -16,18 +16,18 @@ variables:
 
 steps:
 - task: UseDotNet@2
-displayName: 'Use .NET Core SDK 3.1.300'
-inputs:
-  packageType: sdk
-  version: 3.1.300
+  displayName: 'Use .NET Core SDK 3.1.300'
+  inputs:
+    packageType: sdk
+    version: 3.1.300
 
 - task: Npm@1
-displayName: 'Run npm install'
+  displayName: 'Run npm install'
   inputs:
     verbose: false
     
 - task: gulp@1
-  displayName: 'Run gulp tasks'
+    displayName: 'Run gulp tasks'
 
 - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
   displayName: 'Write build info'
@@ -46,4 +46,4 @@ displayName: 'Run npm install'
     command: 'build'
     arguments: '--no-restore --configuration Release'
     projects: '**/*.csproj'
-    
+
