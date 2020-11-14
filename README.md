@@ -1,3 +1,4 @@
+[![Build Status](https://poctfs2018.visualstudio.com/Space%20Game%20-%20web%20-%20Pipeline/_apis/build/status/stevie-strange.mslearn-tailspin-spacegame-web?branchName=master)](https://poctfs2018.visualstudio.com/Space%20Game%20-%20web%20-%20Pipeline/_build/latest?definitionId=7&branchName=master)
 
 # Contributing
 
